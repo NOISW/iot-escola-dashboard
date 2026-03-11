@@ -8,7 +8,7 @@ ar:(200+Math.random()*200).toFixed(0),
 luz:(300+Math.random()*700).toFixed(0)
 }
 
-await fetch("http://localhost:3000/api/cadastrar",{
+await fetch("https://iot-escola-dashboard.vercel.app/",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify(dados)
