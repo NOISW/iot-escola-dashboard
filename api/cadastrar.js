@@ -1,18 +1,9 @@
-import fs from "fs";
-import path from "path";
-
-const filePath = path.join(process.cwd(), "data.json");
+let dados = global.dadosSensores || [];
 
 export default function handler(req, res) {
 
-if(req.method !== "POST"){
-return res.status(405).json({error:"method not allowed"});
-}
-
-let dados = [];
-
-if(fs.existsSync(filePath)){
-dados = JSON.parse(fs.readFileSync(filePath));
+if (req.method !== "POST") {
+return res.status(405).json({ error: "Método não permitido" });
 }
 
 const body = req.body;
@@ -23,13 +14,13 @@ temperatura: body.temperatura,
 umidade: body.umidade,
 ar: body.ar,
 luz: body.luz,
-data: new Date()
+data: new Date().toISOString()
 };
 
 dados.unshift(registro);
 
-fs.writeFileSync(filePath, JSON.stringify(dados,null,2));
+global.dadosSensores = dados;
 
-res.status(200).json({status:"ok"});
+res.status(200).json({ status: "ok", dados });
 
 }
