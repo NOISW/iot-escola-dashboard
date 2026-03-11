@@ -1,0 +1,15 @@
+
+CREATE DATABASE iot_escola;
+
+USE iot_escola;
+
+CREATE TABLE sensores(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+temperatura FLOAT,
+umidade FLOAT,
+ar FLOAT,
+luz FLOAT,
+data TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);

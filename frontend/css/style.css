@@ -1,0 +1,71 @@
+
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+margin:0;
+}
+
+header{
+background:#020617;
+padding:20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:space-around;
+margin:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:200px;
+text-align:center;
+}
+
+.alerta{
+margin:20px;
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.mapa-container{
+position:relative;
+width:700px;
+margin:auto;
+}
+
+.croqui{
+width:100%;
+opacity:0.6;
+}
+
+.sensor{
+position:absolute;
+background:red;
+padding:5px;
+font-size:12px;
+border-radius:5px;
+}
+
+.s1{top:60%; left:20%;}
+.s2{top:70%; left:20%;}
+.s3{top:80%; left:20%;}
+.s4{top:65%; left:60%;}
+
+table{
+width:90%;
+margin:20px auto;
+background:#1e293b;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #334155;
+text-align:center;
+}
