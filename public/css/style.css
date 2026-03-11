@@ -1,40 +1,73 @@
 
 body{
-font-family:Arial;
-background:#0f172a;
-color:white;
+font-family: "Segoe UI", Arial;
+background: var(--montale-light);
 margin:0;
+color:#111;
 }
 
 header{
-background:#020617;
+background: var(--montale-blue);
+color:white;
 padding:20px;
 text-align:center;
+font-size:22px;
+font-weight:600;
 }
 
 .cards{
 display:flex;
-justify-content:space-around;
-margin:20px;
+gap:20px;
+justify-content:center;
+margin:40px;
+flex-wrap:wrap;
 }
 
 .card{
-background:#1e293b;
-padding:20px;
+background:white;
+padding:25px;
 border-radius:10px;
-width:200px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+width:220px;
 text-align:center;
+}
+
+.card h2{
+color:var(--montale-blue);
+font-size:18px;
+}
+
+.card p{
+font-size:30px;
+font-weight:bold;
+}
+
+section{
+max-width:1200px;
+margin:auto;
 }
 
 table{
-width:90%;
-margin:20px auto;
+width:100%;
 border-collapse:collapse;
-background:#1e293b;
+background:white;
+margin-top:30px;
 }
 
-th,td{
+th{
+background:var(--montale-blue);
+color:white;
 padding:10px;
-border-bottom:1px solid #334155;
-text-align:center;
+}
+
+td{
+padding:10px;
+border-bottom:1px solid #ddd;
+}
+
+.alerta{
+background:white;
+padding:20px;
+margin:20px;
+border-left:5px solid var(--montale-blue);
 }
