@@ -1,26 +1,20 @@
 
-# Projeto IoT Escola (Versão Avançada)
+# IoT Escola - Vercel Serverless
 
-Sistema de monitoramento ambiental para ambientes escolares.
+Projeto IoT com **API Serverless no Vercel (Node.js)**.
 
 Arquitetura:
 
-Sensores → ESP32 → API PHP → MySQL → Dashboard Web
+Sensores → API (/api/cadastrar) → Dashboard
 
-Funcionalidades:
+Deploy:
 
-• Dashboard em tempo real  
-• Gráfico de temperatura (Chart.js)  
-• Histórico de dados  
-• Alertas automáticos  
-• Mapa da escola com sensores  
-• Simulador de sensores (para testes sem hardware)  
+1. Criar repositório GitHub
+2. Enviar arquivos
+3. Importar no Vercel
+4. Abrir site
 
-Estrutura:
+Endpoints:
 
-frontend/ → dashboard  
-backend/ → API  
-database/ → banco de dados  
-simulador/ → gerador de dados  
-esp32/ → firmware IoT  
-
+POST /api/cadastrar
+GET /api/listar

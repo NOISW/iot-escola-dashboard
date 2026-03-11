@@ -11,64 +11,33 @@
 <body>
 
 <header>
-<h1>Monitoramento Ambiental - Escola IoT</h1>
+<h1>Dashboard IoT - Monitoramento Ambiental</h1>
 </header>
 
 <section class="cards">
-
-<div class="card">
-<h2>Temperatura</h2>
-<p id="temp">--</p>
-</div>
-
-<div class="card">
-<h2>Umidade</h2>
-<p id="hum">--</p>
-</div>
-
-<div class="card">
-<h2>Qualidade do Ar</h2>
-<p id="air">--</p>
-</div>
-
-<div class="card">
-<h2>Luminosidade</h2>
-<p id="light">--</p>
-</div>
-
+<div class="card"><h2>Temperatura</h2><p id="temp">--</p></div>
+<div class="card"><h2>Umidade</h2><p id="hum">--</p></div>
+<div class="card"><h2>Qualidade do Ar</h2><p id="air">--</p></div>
+<div class="card"><h2>Luminosidade</h2><p id="light">--</p></div>
 </section>
 
 <section class="alerta">
-<h2>Status Ambiental</h2>
+<h2>Status</h2>
 <p id="alerta">Aguardando dados...</p>
 </section>
 
-<section class="charts">
+<section class="grafico">
 <canvas id="graficoTemp"></canvas>
 </section>
 
-<section class="mapa">
-<h2>Mapa da Escola e Sensores</h2>
-
-<div class="mapa-container">
-
-<img src="assets/croqui_escola.pdf" class="croqui">
-
-<div class="sensor s1">Sala 1</div>
-<div class="sensor s2">Sala 2</div>
-<div class="sensor s3">Informática</div>
-<div class="sensor s4">Biblioteca</div>
-
-</div>
-
+<section>
+<h2>Mapa da Escola</h2>
+<embed src="assets/croqui_escola.pdf" width="800" height="500">
 </section>
 
-<section class="tabela">
-
-<h2>Histórico de Leituras</h2>
-
+<section>
+<h2>Histórico</h2>
 <table>
-
 <thead>
 <tr>
 <th>ID</th>
@@ -79,14 +48,10 @@
 <th>Data</th>
 </tr>
 </thead>
-
-<tbody id="dadosTabela"></tbody>
-
+<tbody id="tabela"></tbody>
 </table>
-
 </section>
 
 <script src="js/dashboard.js"></script>
-
 </body>
 </html>
